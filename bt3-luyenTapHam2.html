@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+
+<body >
+
+<script>
+    function tinhGiaiThua(num) {
+        var result = num;
+        if (num === 0 || num === 1) {
+            return 1;
+        }
+        while(num > 1) {
+            num--;
+            result *= num;
+        }
+        return result;
+    }
+    document.write('Giai thừa của số đó = '  + tinhGiaiThua(+prompt('Nhập số bất kì để tính giai thừa')))
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm đảo ngược chuỗi</title>
+</head>
+
+<body onload="numbers()">
+
+
+<script>
+    let array= []
+    function numbers() {
+        for (i=0;i < 2 ;i++){
+            let a = prompt("nhập số ")
+            array[i] = a}
+        let u = array[0]
+        array[0]= array[1]
+        array[1]=u;
+        alert(array)
+    }
+</script>
+</body>
+
+</html>
